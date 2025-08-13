@@ -81,8 +81,6 @@ Here's a step-by-step breakdown of the flow:
 
 ## 🖼️ Screenshots
 
-*(Note: Place your screenshot files named `pdf.png` and `youtube.png` inside the `public` folder of your frontend application directory for these images to display correctly).*
-
 | Chatting with a PDF Document | Chatting with a YouTube Video |
 | :---: | :---: |
 | <img src="./client/public/pdf.png" alt="Chatting with a PDF" width="100%"> | <img src="./client/public/youtube.png" alt="Chatting with a YouTube video" width="100%"> |
@@ -103,7 +101,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Your-GitHub-Username]/AskTheSource.git
+    git clone [https://github.com/](https://github.com/)Swaymbhu-git/AskTheSource.git
     cd AskTheSource
     ```
 
