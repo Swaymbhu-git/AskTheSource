@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js"/>
   <img src="https://img.shields.io/badge/langchain-%23000000.svg?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain"/>
   <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
+  <img src="https://img.shields.io/badge/Render-%2346E3B7.svg?style=for-the-badge&logo=render&logoColor=white" alt="Render"/>
 </p>
 
 ---
@@ -149,8 +150,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## 📫 Contact
 
-**[Your Name]**
+**HIMANSHU PATEL**
 
-* **GitHub:** [github.com/YourUsername](https://github.com/YourUsername)
-* **LinkedIn:** [linkedin.com/in/YourProfile](https://linkedin.com/in/YourProfile)
-* **Portfolio:** [your-website.com](https://your-website.com)
+* **GitHub:** [github.com/Swaymbhu-git](https://github.com/Swaymbhu-git)
+* **LinkedIn:** [linkedin.com/in/Himanshu](https://www.linkedin.com/in/himanshu-patel-b3259b250/)
