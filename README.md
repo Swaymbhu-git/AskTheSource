@@ -1,15 +1,4 @@
-<p align="center">
-  <svg width="280" height="50" viewBox="0 0 280 50" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .cursor { animation: blink 1s step-end infinite; }
-      @keyframes blink { from, to { opacity: 1 } 50% { opacity: 0 } }
-    </style>
-    <text x="10" y="35" font-family="'Courier New', Courier, monospace" font-size="24" font-weight="bold" fill="#333">
-      <tspan fill="#007bff">&gt;</tspan> AskTheSource<tspan class="cursor" fill="#333">_</tspan>
-    </text>
-  </svg>
-</p>
-
+![alt text](image.png)
 <p align="center">
   An intelligent conversational agent that allows users to chat with their own content, sourced from PDF documents or YouTube videos.
 </p>
@@ -18,7 +7,6 @@
   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"/>
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
   <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js"/>
-  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
   <img src="https://img.shields.io/badge/langchain-%23000000.svg?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain"/>
   <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
 </p>
@@ -56,13 +44,13 @@ You can try out the live application here:
 
 This project leverages a modern, full-stack architecture to deliver a robust and intelligent user experience.
 
-| Category                | Technologies                                                                                                                                                             |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Frontend** | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)          |
+| Category | Technologies |
+| :--- | :--- |
+| **Frontend** | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white) |
 | **Backend** | ![NodeJS](https://img.shields.io/badge/node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB) |
-| **Databases** | ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) `(Session Data)` <br/> ![Pinecone](https://img.shields.io/badge/Pinecone-007bff?style=flat) `(Vector Storage)` |
-| **AI & Orchestration** | ![LangChain](https://img.shields.io/badge/langchain-%23000000.svg?style=flat) ![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B7?style=flat) `(LLM)`          |
-| **Deployment** | ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white) `(Frontend)` <br/> ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat) `(Backend)`            |
+| **Vector Database** | ![Pinecone](https://img.shields.io/badge/Pinecone-007bff?style=flat&logo=pinecone&logoColor=white) `(For Vector Storage)` |
+| **AI & Orchestration** | ![LangChain](https://img.shields.io/badge/langchain-%23000000.svg?style=flat&logo=langchain&logoColor=white) ![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75B7?style=flat) `(LLM)` |
+| **Deployment** | ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white) `(Frontend)` <br/> ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white) `(Backend)` |
 
 ---
 
@@ -90,6 +78,17 @@ Here's a step-by-step breakdown of the flow:
 
 ---
 
+## 🖼️ Screenshots
+
+*(Note: Place your screenshot files named `pdf.png` and `youtube.png` inside the `public` folder of your frontend application directory for these images to display correctly).*
+
+| Chatting with a PDF Document | Chatting with a YouTube Video |
+| :---: | :---: |
+| <img src="./client/public/pdf.png" alt="Chatting with a PDF" width="100%"> | <img src="./client/public/youtube.png" alt="Chatting with a YouTube video" width="100%"> |
+
+
+---
+
 ## 🚀 Getting Started (Local Setup)
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -113,22 +112,18 @@ Follow these instructions to get a copy of the project up and running on your lo
         ```bash
         npm install
         ```
-    * Create a `.env` file in the root of the `server` directory. This file will store your secret keys. Copy the contents of `.env.example` (if provided) or create it from scratch with the following variables:
+    * Create a `.env` file in the root of the `server` directory. This file will store your secret keys. Add the following variables:
         ```env
         # Google API Key for Gemini and Embeddings
         GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
 
         # Pinecone Vector Database Credentials
         PINECONE_API_KEY="YOUR_PINECONE_API_KEY"
-        PINECONE_ENVIRONMENT="YOUR_PINECONE_ENVIRONMENT"
         PINECONE_INDEX_NAME="your-pinecone-index-name"
-
-        # MongoDB Connection String
-        MONGODB_URI="YOUR_MONGODB_CONNECTION_STRING"
         ```
 
 3.  **Setup the Frontend:**
-    * Navigate to the client directory (e.g., `cd ../client`).
+    * Navigate to the client directory from the root folder (e.g., `cd client`).
     * Install dependencies:
         ```bash
         npm install
@@ -149,14 +144,6 @@ Follow these instructions to get a copy of the project up and running on your lo
         npm run dev
         ```
     * Open your browser and navigate to the local URL provided (usually `http://localhost:5173`).
-
----
-
-## 🎬 Demo
-
-![AskTheSource Demo](./demo.gif)
-
-*A brief animated GIF showing the process of uploading a PDF, asking a question, and receiving a source-grounded answer.*
 
 ---
 
