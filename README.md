@@ -1,4 +1,4 @@
-![alt text](./client/public/image.png)
+![alt text](./client/public/logo.svg)
 <p align="center">
   An intelligent conversational agent that allows users to chat with their own content, sourced from PDF documents or YouTube videos.
 </p>
