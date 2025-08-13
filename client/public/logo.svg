@@ -1,0 +1,14 @@
+<svg width="280" height="50" viewBox="0 0 280 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cursor {
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      from, to { opacity: 1 }
+      50% { opacity: 0 }
+    }
+  </style>
+  <text x="10" y="35" font-family="'Courier New', Courier, monospace" font-size="24" font-weight="bold" fill="#ffffff">
+    <tspan fill="#007bff">&gt;</tspan> AskTheSource<tspan class="cursor" fill="#ffffff">_</tspan>
+  </text>
+</svg>
