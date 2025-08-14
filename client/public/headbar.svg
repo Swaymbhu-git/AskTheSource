@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Less-than symbol">
+  <title>Centered less-than symbol</title>
+  <defs>
+    <!-- subtle drop shadow -->
+    <filter id="drop" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- background (optional) -->
+  <!-- <rect width="100%" height="100%" fill="#0f1724"/> -->
+
+  <text
+    x="50%"
+    y="50%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="'Courier New', Courier, monospace"
+    font-weight="700"
+    font-size="520"
+    fill="#007bff"
+    filter="url(#drop)"
+  >
+    &lt;
+  </text>
+</svg>
